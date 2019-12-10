@@ -2,9 +2,17 @@ name: 'Container Action Template'
 description: 'Get started with Container actions'
 author: 'GitHub'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  backend_config
+    description: ''
+    default: 'backend.config'
+  tenant_id 
+    description: ''
+  subcription_is
+    description: ''
+  client_secret
+    description: ''
+  client_id
+    description: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
